@@ -1,0 +1,166 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage[RPvoltages, american]{circuitikz}
+\begin{document}
+  \subsection*{Problem 1}
+  \subsubsection*{A}
+  \begin{enumerate}[i.]
+    \item $11_{2}:$
+    $1\times 2^{1}+1\times 2^{0} = 3$
+    
+    \item $101_{2}:$
+    $1\times 2^{2}+0\times 2^{1}+1\times 2{0} = 5$
+    
+    \item $1000_{2}:$
+    $1\times 2^{3}+0\times 2^{2}+0\times 2^{1}+0\times 2^{0} = 8$
+    
+    \item $1101_{2}:$
+    $2^{3}+2^{2}+0^{3}+2^{0} = 13$
+    
+    \item $101011_{2}:$
+    $2^{5}+0^{4}+2^{3}+0^{2}+2^{1}+2^{0} = 43$
+    
+    \item $100110_{2}:$
+    $2^{5}+0^{4}+0^{3}+2^{2}+2^{1}+0^{0} = 38$
+     
+    \item $11110_{2}:$
+    $2^{4}+2^{3}+2^{2}+2^{1}+0^{0} = 30$
+    
+    \item $10000000_{2}:$
+    $2^{7}+0^{6}+0^{5}+0^{4}+0^{3}+0^{2}+0^{1}+0^{0} = 128$
+    
+    \item $11111111_{2}:$
+    $2^{7}+2^{6}+2^{5}+2^{4}+2^{3}+2^{2}+2^{1}+2^{0} = 255$
+    
+    \item $11010111_{2}:$
+    $2^{7}+2^{6}+0^{5}+2^{4}+0^{3}+2^{2}+2^{1}+2^{0} = 215$
+    
+  \end{enumerate}
+  \subsubsection*{B}
+
+  \begin{enumerate}[i.]
+    \item $7_{10} = 111_{2}$
+    \item $10_{10} = 1010_{2} $
+    \item $33_{10} = 100001_{2}$
+    \item $50_{10} = 110010_{2}$
+    \item $96_{10} = 1100000_{2}$
+    \item $108_{10} = 1101100_{2}$
+    \item $214_{10} = 11010110_{2}$
+    \item $15_{10} = 1111_{2}$
+    \item $71_{10} = 1000111_{2}$
+    \item $146_{10} = 10010010_{2}$
+  \end{enumerate}
+
+  \subsubsection*{C}
+  \begin{enumerate}
+    \item \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+      & & 1 \\
+    + & & 1 \\
+    \hline
+    & 1 & 0
+    \end{tabular}
+    \item \begin{tabular}{c@{\,}c@{\,}c@{\,}c}
+      & 1 & 1 \\
+      + & 1 & 0 \\
+      \hline
+      1 & 0 & 1
+    \end{tabular}
+    \item \begin{tabular}{c@{\,}c@{\,}c@{\,}c@{\,}c}
+      & 1 & 1 & 0 \\
+      + & 0 & 1 & 1 \\
+      \hline
+      1 & 0 & 0 & 1
+    \end{tabular}
+    \item \begin{tabular}{c@{\,}c@{\,}c@{\,}c@{\,}c@{\,}c}
+      & 1 & 1 & 0 & 1 \\
+      + & 1 & 0 & 1 & 1 \\
+      \hline
+      1 & 1 & 0 & 0 & 0
+    \end{tabular}
+    \item \begin{tabular}{c@{\,}c@{\,}c@{\,}c@{\,}c@{\,}c}
+      & 0 & 0 & 1 & 0 & 1 \\
+      + & 1 & 1 & 1 & 1 & 0 \\
+      \hline
+      1 & 0 & 0 & 0 & 1 & 1 
+    \end{tabular}
+  \end{enumerate}
+  \subsection*{Problem 2}
+  \begin{enumerate}[a)]
+
+    \item \begin {displaymath} 
+      \begin{array}{|c|c|c|}
+        \hline
+        A_{in} & B_{in} & A \land B\\
+        \hline
+        0 & 0 & 0\\
+        0 & 1 & 0\\
+        1 & 0 & 0\\
+        1 & 1 & 1\\
+        \hline
+      \end{array}  
+    \end{displaymath}
+    \input{Diagram1.tex}
+    
+    \item \begin {displaymath} 
+      \begin{array}{|c|c|c|}
+        \hline
+        A_{in} & B_{in} & A \oplus B\\
+        \hline
+        0 & 0 & 0\\
+        0 & 1 & 1\\
+        1 & 0 & 1\\
+        1 & 1 & 0\\
+        \hline
+      \end{array}
+    \end{displaymath}
+    \input{Diagram2.tex}
+    
+    \item \begin {displaymath}
+      \begin{array}{|c|c|c|c|}
+        \hline
+        A_{in} & B_{in} & A \lor B & \neg(A \lor B)\\
+        \hline
+        0 & 0 & 0 & 1\\
+        0 & 1 & 1 & 0\\
+        1 & 0 & 1 & 0\\
+        1 & 1 & 1 & 0\\
+        \hline
+      \end{array}  
+    \end{displaymath}
+    \input{Diagram3.tex}
+    
+    \item \begin {displaymath}
+      \begin{array}{|c|c|c|c|}
+        \hline
+        A_{in} & B_{in} & \neg B & A \oplus \neg B\\
+        \hline
+        0 & 0 & 0 & 1\\
+        0 & 1 & 1 & 0\\
+        1 & 0 & 1 & 0\\
+        1 & 1 & 1 & 1\\
+        \hline
+      \end{array}
+    \end{displaymath}
+    \input{Diagram4.tex}
+    
+    \item \begin {displaymath}
+      \begin{array}{|c|c|c|c|c|}
+        \hline
+        A_{in} & B_{in} & C_{in} & A \lor B & (A \lor B)\oplus C\\
+        \hline
+        0 & 0 & 0 & 0 & 0\\
+        0 & 0 & 1 & 0 & 1\\
+        0 & 1 & 0 & 1 & 1\\
+        0 & 1 & 1 & 1 & 0\\
+        1 & 0 & 0 & 1 & 1\\
+        1 & 0 & 1 & 1 & 0\\
+        1 & 1 & 0 & 1 & 1\\
+        1 & 1 & 1 & 1 & 0\\
+        \hline
+      \end{array}
+    \end{displaymath}
+    \input{Diagram5.tex}
+  \end{enumerate}
+  This document write using \LaTeX \ author: Felix Montalfu(03082180055)
+\end{document}
