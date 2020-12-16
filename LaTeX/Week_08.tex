@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{physics}
+\usepackage[normalem]{ulem}
+\usepackage{cancel}
+\begin{document}
+    \begin{enumerate}[1.]
+        \item $\bra{A} = \begin{pmatrix}5 & 3i\end{pmatrix}$
+        \item $\bra{B} = \begin{pmatrix}-7 & 4e^{i\frac{\pi}{3}}\end{pmatrix}$
+        \item $\bra{C} = \begin{pmatrix} 1 \\ e^{-i\frac{\pi}{6}}\end{pmatrix}$
+        \item $\braket{\psi}{\psi} = 1$
+        \item $\braket{A}{A} = \\
+        \ket{A} = \begin{pmatrix}5a & 3ia\end{pmatrix}\\
+        \bra{A} = \begin{pmatrix}5a \\ 31a\end{pmatrix}\\
+        \begin{pmatrix}5a \\ 3ia\end{pmatrix}\begin{pmatrix}5a & 3ia\end{pmatrix}\\
+        25a^2 + 9 \times -1^2 \times a^2\\
+        a = \frac{1}{\sqrt{34}}$
+        \item $\ket{B} = \begin{pmatrix}7b \\ 4e^{-i\frac{\pi}{3}}\end{pmatrix}\\
+        \bra{B} = \begin{pmatrix}7b & 4e^{i\frac{\pi}{3}}\end{pmatrix}\\
+        =\begin{pmatrix}7b \\ 4e^{-i\frac{\pi}{3}}\end{pmatrix} \begin{pmatrix}7b & 4e^{-i\frac{\pi}{3}}\end{pmatrix}\\
+        =49b^2 + 16 \times 1 \times b^2\\
+        =\frac{1}{\sqrt{65}}$
+        \item $\ket{C} = \begin{pmatrix}c & e^{i\frac{\pi}{6}}\end{pmatrix}\\
+        \bra{C} = \begin{pmatrix}c \\ e^{-i\frac{\pi}{6}}\end{pmatrix}\\
+        =\begin{pmatrix}c & e^{i\frac{\pi}{6}}\end{pmatrix}\begin{pmatrix}c \\ e^{-i\frac{\pi}{6}}\end{pmatrix}\\
+        =c^2 + 1 \times c^2\\
+        =\sqrt{1}$
+        \item $\ket{0} = \begin{pmatrix}1 \\ 0\end{pmatrix}$
+        \item $\ket{1} = \begin{pmatrix}0 \\ 1\end{pmatrix}$
+        \item $\braket{0}{0} = \begin{pmatrix}1 \\ 0\end{pmatrix}\begin{pmatrix}1 & 0\end{pmatrix}\\
+        = 1 + 0\\
+        = 1$
+        \item $\braket{0}{1} = \begin{pmatrix}1 \\ 0\end{pmatrix}\begin{pmatrix}0 & 1\end{pmatrix}\\
+        = 0 + 0
+        = 0$
+        \item $\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})\\
+        \frac{1}{\sqrt{2}}\left(\begin{pmatrix}1 \\ 0\end{pmatrix}+\begin{pmatrix}0 \\ 1\end{pmatrix}\right)\\
+        \frac{1}{\sqrt{2}}\begin{pmatrix}1 \\ 1\end{pmatrix}$
+        \item $\sqrt{\frac{5}{7}}\ket{0} + \sqrt{\frac{2}{7}}\ket{1}$
+        \item $P(0)=\abs{\braket{0}{+}}^2\\
+        = \abs*{\frac{1}{\sqrt{2}}}^2\\\\
+        = \frac{1}{2}$
+        \item $P(1) = \abs{\braket{1}{-}}^2\\
+        = \abs*{-\frac{1}{\sqrt{2}}}\\
+        =\frac{1}{2}$
+        \item $P(0) = \abs{\braket{0}{\phi}}\\
+        =\abs{\frac{2}{\sqrt{13}}}^2\\
+        =\frac{4}{13}$
+        \item $P(1) = \abs{\braket{1}{\phi}}\\
+        =\abs{\frac{3}{\sqrt{13}}e^{i\frac{\pi}{4}}}\\
+        =\frac{9}{13}$
+        \item $\braket{+}{+}\\
+        =\left(\frac{1}{\sqrt{2}}\bra{0} + \frac{1}{\sqrt{2}}\bra{1}\right)\left(\frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1}\right)\\
+        =\frac{1}{2}\cancel{\braket{0}{0}}+\frac{1}{2}\braket{0}{1}+\frac{1}{2}\braket{1}{0}+\frac{1}{2}\cancel{\braket{1}{1}}\\
+        =\frac{1}{2}+\frac{1}{2}\\
+        =1$
+        \item $\braket{+}{-}\\
+        =\left(\frac{1}{\sqrt{2}}\bra{0} + \frac{1}{\sqrt{2}}\bra{1}\right)\left(\frac{1}{\sqrt{2}}\ket{0} - \frac{1}{\sqrt{2}}\ket{1}\right)\\
+        =\frac{1}{2}\cancel{\braket{0}{0}}-\frac{1}{2}\braket{0}{1}+\frac{1}{2}\braket{1}{0}-\frac{1}{2}\cancel{\braket{1}{1}}\\
+        =\frac{1}{2}-\frac{1}{2}\\
+        =0$
+        \item $\braket{\phi}{+}$
+    \end{enumerate}
+\end{document}
