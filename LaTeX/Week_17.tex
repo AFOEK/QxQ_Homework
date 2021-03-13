@@ -7,8 +7,32 @@
 \usepackage{physics}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{listings}
 \begin{document}
     \begin{enumerate}[1.]
-        \item 
+        \item $\begin{bmatrix}0 \\ 1\end{bmatrix} \otimes \begin{bmatrix}1 \\ 0\end{bmatrix}\\\\
+        \begin{bmatrix}
+            0\begin{pmatrix}1 \\ 0\end{pmatrix} \\ 1 \begin{pmatrix}1 \\ 0\end{pmatrix}
+        \end{bmatrix}\\\\
+        \begin{bmatrix}0 \\ 0 \\ 1 \\ 0\end{bmatrix}$
+        \begin{lstlisting}[language=Python]
+            Phi = np.array([0],[0],[1],[0])
+        \end{lstlisting}
+        \item $\ket{\varPhi} = \begin{bmatrix}1 && 0 && 0 && 0 \\ 0 && 1 && 0 && 0 \\ 0 && 0 && 0 && 1 \\ 0 && 0 && 1 && 0\end{bmatrix}\ket{\varPsi}\\\\
+        \ket{\varPhi} =\begin{bmatrix}1 && 0 && 0 && 0 \\ 0 && 1 && 0 && 0 \\ 0 && 0 && 0 && 1 \\ 0 && 0 && 1 && 0\end{bmatrix}\begin{bmatrix}0 \\ 0 \\ 1 \\ 0\end{bmatrix}\\
+        =\begin{bmatrix}0 \\ 0 \\ 0 \\ 1\end{bmatrix}$
+        \begin{lstlisting}[language=Python]
+            Phi = np.array([0],[0],[0],[1])
+        \end{lstlisting}
+        \item $\ket{\varPsi} = \left(\left(\begin{bmatrix}1 \\ 0\end{bmatrix} \otimes \begin{bmatrix}1 \\ 0\end{bmatrix}\right)\otimes \begin{bmatrix}0 \\ 1\end{bmatrix}\right)\otimes \begin{bmatrix}1 \\ 0\end{bmatrix}\\
+        =\left(\begin{bmatrix}1\begin{pmatrix}1 \\ 0\end{pmatrix}\\0\begin{pmatrix}1 \\ 0\end{pmatrix}\end{bmatrix} \otimes \begin{bmatrix}0 \\ 1\end{bmatrix}\right)\otimes \begin{bmatrix}1 \\ 0\end{bmatrix}\\
+        =\left(\begin{bmatrix}1 \\ 0 \\ 0 \\ 0\end{bmatrix}\otimes\begin{bmatrix}0 \\ 1\end{bmatrix}\right)\otimes\begin{bmatrix}1 \\ 0\end{bmatrix}\\
+        =\left(\begin{bmatrix}1\begin{pmatrix}0 \\ 1\end{pmatrix} \\ 0\begin{pmatrix}0 \\ 1\end{pmatrix} \\ 0\begin{pmatrix}0 \\ 1\end{pmatrix} \\ 0\begin{pmatrix}0 \\ 1\end{pmatrix}\end{bmatrix}\right)\otimes\begin{bmatrix}1 \\ 0\end{bmatrix}\\
+        =\begin{bmatrix}0\\ 1 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{bmatrix}\otimes\begin{bmatrix}1 \\ 0\end{bmatrix}\\\\\\
+        =\begin{bmatrix}0 \\ 0 \\ 1 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\  0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0\end{bmatrix}$
+        \begin{lstlisting}[language=Python]
+            Phi = np.array([0],[0],[1],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0])
+        \end{lstlisting}
+        \item $ $
     \end{enumerate}
 \end{document}
